@@ -13,7 +13,7 @@ spec:
         name: springboot
     spec:
       containers:
-      - image: mbaurnwal546/spring-boot-mongo
+      - image: dileep95/spring-boot-mongo
         name: springboot
         ports:
         - name: springboot
@@ -28,7 +28,7 @@ metadata:
     name: springboot
   name: springboot
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
     - port: 8080
       targetPort: 8080
